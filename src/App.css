@@ -34,7 +34,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+li {
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -42,7 +43,8 @@ p {
 
 h2,
 h3,
-p {
+p,
+li {
   font-family: "Roboto Mono", monospace;
 }
 
@@ -61,7 +63,8 @@ h1 {
   font-size: 32px;
 }
 
-p {
+p,
+li {
   font-size: 16px;
   font-weight: 300;
 }
@@ -85,7 +88,8 @@ p {
   h3 {
     font-size: 24px;
   }
-  p {
+  p,
+  li {
     font-size: 20px;
   }
 
