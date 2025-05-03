@@ -6,6 +6,7 @@ import virtueversesDark from "../../assets/virtueversesDark.png";
 import fastReactPizza from "../../assets/fast_react_pizza.png";
 import theWildOasis from "../../assets/the-wild-oasis.png";
 import chitraMitra from "../../assets/ChitraMitra.png";
+import codeEditor from "../../assets/code.png";
 
 function Projects() {
   const { theme } = useTheme();
@@ -40,6 +41,12 @@ function Projects() {
           link="https://github.com/Kamlesh718/chitramitra-social-web-app"
           title="ChitraMitra"
           project="Social Media Web App"
+        />
+        <ProjectCard
+          src={codeEditor}
+          link="https://github.com/Kamlesh718/react_code_editor"
+          title="Code Editor"
+          project="Simple React Code Editor"
         />
       </div>
     </section>
