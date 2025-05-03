@@ -71,6 +71,11 @@
   max-width: 24ch;
 }
 
+.desc_box {
+  display: flex;
+  justify-content: center;
+}
+
 .info {
   display: flex;
   flex-direction: column;
