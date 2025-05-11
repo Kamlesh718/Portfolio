@@ -7,6 +7,7 @@ import fastReactPizza from "../../assets/fast_react_pizza.png";
 import theWildOasis from "../../assets/the-wild-oasis.png";
 import chitraMitra from "../../assets/ChitraMitra.png";
 import codeEditor from "../../assets/code.png";
+import solarSystem from "../../assets/solarSystem.png";
 
 function Projects() {
   const { theme } = useTheme();
@@ -47,6 +48,12 @@ function Projects() {
           link="https://github.com/Kamlesh718/react_code_editor"
           title="Code Editor"
           project="Simple React Code Editor"
+        />
+        <ProjectCard
+          src={solarSystem}
+          link="https://github.com/Kamlesh718/solar-system"
+          title="Solar System"
+          project="3D Solar System with THREEJS"
         />
       </div>
     </section>
