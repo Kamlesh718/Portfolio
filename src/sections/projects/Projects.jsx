@@ -8,6 +8,7 @@ import theWildOasis from "../../assets/the-wild-oasis.png";
 import chitraMitra from "../../assets/ChitraMitra.png";
 import codeEditor from "../../assets/code.png";
 import solarSystem from "../../assets/solarSystem.png";
+import spaceExplorer from "../../assets/space-explorer.ico";
 
 function Projects() {
   const { theme } = useTheme();
@@ -54,6 +55,12 @@ function Projects() {
           link="https://github.com/Kamlesh718/solar-system"
           title="Solar System"
           project="3D Solar System with THREEJS"
+        />
+        <ProjectCard
+          src={spaceExplorer}
+          link="https://github.com/Kamlesh718/space-explorer"
+          title="Space Explorer"
+          project="A 3D space-themed web game"
         />
       </div>
     </section>
