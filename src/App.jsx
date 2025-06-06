@@ -1,4 +1,5 @@
 import "./App.css";
+import LivePreview from "./common/LivePreview";
 import Contact from "./sections/Contact/Contact";
 import Experience from "./sections/Experience/Experience";
 import Footer from "./sections/Footer/Footer";
@@ -11,6 +12,7 @@ function App() {
     <>
       <Hero />
       <Projects />
+      <LivePreview />
       <Experience />
       <Skills />
       <Contact />
