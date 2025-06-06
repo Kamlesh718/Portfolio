@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <Hero />
+      <Experience />
       <Projects />
       <LivePreview />
-      <Experience />
       <Skills />
       <Contact />
       <Footer />

@@ -61,11 +61,14 @@ function LivePreview() {
                 rel="noopener noreferrer"
                 className="live-demo-button"
               >
-                Live Demo
+                <span className="live-demo-text">Live Demo</span>
+                <span className="live-demo-icon" role="img" aria-label="link">
+                  🔗
+                </span>
               </a>
 
               <div className="mini-browser-title">{project.name}</div>
-              <div style={{ width: "52px" }} />
+              {/* <div style={{ width: "52px" }} /> */}
             </div>
 
             <iframe

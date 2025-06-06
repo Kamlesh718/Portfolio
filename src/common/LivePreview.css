@@ -46,7 +46,7 @@
   color: #555;
   font-weight: 500;
   flex: 1;
-  text-align: center;
+  text-align: end;
   margin-left: -48px;
 }
 
@@ -111,4 +111,28 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   color: #000;
   border-color: #999;
+}
+
+.live-demo-text {
+  display: inline;
+}
+
+.live-demo-icon {
+  display: none;
+}
+
+/* 🔽 On small screens, hide text and show icon */
+@media (max-width: 768px) {
+  .live-demo-button {
+    padding: 2px 4px;
+  }
+
+  .live-demo-text {
+    display: none;
+  }
+
+  .live-demo-icon {
+    display: inline;
+    font-size: 16px;
+  }
 }
