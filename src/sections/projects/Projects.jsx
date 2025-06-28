@@ -9,6 +9,7 @@ import chitraMitra from "../../assets/ChitraMitra.png";
 import codeEditor from "../../assets/code.png";
 import solarSystem from "../../assets/solarSystem.png";
 import spaceExplorer from "../../assets/space-explorer.ico";
+import samvada from "../../assets/samvada.png";
 
 function Projects() {
   const { theme } = useTheme();
@@ -61,6 +62,12 @@ function Projects() {
           link="https://github.com/Kamlesh718/space-explorer"
           title="Space Explorer"
           project="A 3D space-themed web game"
+        />
+        <ProjectCard
+          src={samvada}
+          link="https://github.com/Kamlesh718/samvada"
+          title="Samvada"
+          project="A real time chat app"
         />
       </div>
     </section>
