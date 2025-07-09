@@ -10,6 +10,7 @@ import codeEditor from "../../assets/code.png";
 import solarSystem from "../../assets/solarSystem.png";
 import spaceExplorer from "../../assets/space-explorer.ico";
 import samvada from "../../assets/samvada.png";
+import devDesk from "../../assets/devdesk-logo.png";
 
 function Projects() {
   const { theme } = useTheme();
@@ -64,11 +65,18 @@ function Projects() {
           project="A 3D space-themed web game"
         />
         <ProjectCard
+          src={devDesk}
+          link="https://github.com/Kamlesh718/devdesk"
+          title="DevDesk"
+          project="A mini OS in the browser"
+        />
+
+        {/* <ProjectCard
           src={samvada}
           link="https://github.com/Kamlesh718/samvada"
           title="Samvada"
           project="A real time chat app"
-        />
+        /> */}
       </div>
     </section>
   );
