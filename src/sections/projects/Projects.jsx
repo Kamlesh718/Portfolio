@@ -9,8 +9,9 @@ import chitraMitra from "../../assets/ChitraMitra.png";
 import codeEditor from "../../assets/code.png";
 import solarSystem from "../../assets/solarSystem.png";
 import spaceExplorer from "../../assets/space-explorer.ico";
-import samvada from "../../assets/samvada.png";
+// import samvada from "../../assets/samvada.png";
 import devDesk from "../../assets/devdesk-logo.png";
+import restate from "../../assets/homelogo.jpg";
 
 function Projects() {
   const { theme } = useTheme();
@@ -71,12 +72,12 @@ function Projects() {
           project="A mini OS in the browser"
         />
 
-        {/* <ProjectCard
-          src={samvada}
-          link="https://github.com/Kamlesh718/samvada"
-          title="Samvada"
-          project="A real time chat app"
-        /> */}
+        <ProjectCard
+          src={restate}
+          link="https://github.com/Kamlesh718/Re-estate"
+          title="ReState"
+          project="Real Estate App"
+        />
       </div>
     </section>
   );
