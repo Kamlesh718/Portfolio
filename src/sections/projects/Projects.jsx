@@ -83,7 +83,7 @@ function Projects() {
           src={viewlytics}
           link="https://github.com/Kamlesh718/Re-estate"
           title="Viewlytics"
-          project="AI Mini Project"
+          project="AI Small (learning) Project"
         />
       </div>
     </section>
