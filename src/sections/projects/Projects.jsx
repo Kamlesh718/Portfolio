@@ -12,6 +12,7 @@ import spaceExplorer from "../../assets/space-explorer.ico";
 // import samvada from "../../assets/samvada.png";
 import devDesk from "../../assets/devdesk-logo.png";
 import restate from "../../assets/homelogo.jpg";
+import viewlytics from "../../assets/viewlytics.png";
 
 function Projects() {
   const { theme } = useTheme();
@@ -77,6 +78,12 @@ function Projects() {
           link="https://github.com/Kamlesh718/Re-estate"
           title="ReState"
           project="Real Estate App"
+        />
+        <ProjectCard
+          src={viewlytics}
+          link="https://github.com/Kamlesh718/Re-estate"
+          title="Viewlytics"
+          project="AI Mini Project"
         />
       </div>
     </section>
