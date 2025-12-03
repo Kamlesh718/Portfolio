@@ -79,12 +79,12 @@ function Projects() {
           title="ReState"
           project="Real Estate App"
         />
-        <ProjectCard
+        {/* <ProjectCard
           src={viewlytics}
           link="https://github.com/Kamlesh718/viewlytics"
           title="Viewlytics"
           project="AI Small (learning) Project"
-        />
+        /> */}
       </div>
     </section>
   );
