@@ -81,7 +81,7 @@ function Projects() {
         />
         <ProjectCard
           src={viewlytics}
-          link="https://github.com/Kamlesh718/Re-estate"
+          link="https://github.com/Kamlesh718/viewlytics"
           title="Viewlytics"
           project="AI Small (learning) Project"
         />
