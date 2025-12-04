@@ -57,6 +57,10 @@ function Skills() {
         </motion.div>
 
         <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="Typescript" />
+        </motion.div>
+
+        <motion.div variants={item}>
           <SkillList src={checkMarkIcon} skill="Tailwind CSS" />
         </motion.div>
 
@@ -65,11 +69,15 @@ function Skills() {
         </motion.div>
 
         <motion.div variants={item}>
-          <SkillList src={checkMarkIcon} skill="Next.js(Beginner)" />
+          <SkillList src={checkMarkIcon} skill="Next.js" />
         </motion.div>
 
         <motion.div variants={item}>
-          <SkillList src={checkMarkIcon} skill="Node.js(Learning)" />
+          <SkillList src={checkMarkIcon} skill="Node.js" />
+        </motion.div>
+
+        <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="Express.js" />
         </motion.div>
 
         <motion.div variants={item}>
@@ -85,7 +93,15 @@ function Skills() {
         </motion.div>
 
         <motion.div variants={item}>
-          <SkillList src={checkMarkIcon} skill="React Query" />
+          <SkillList src={checkMarkIcon} skill="React Query (Tanstack Query)" />
+        </motion.div>
+
+        <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="React Router" />
+        </motion.div>
+
+        <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="Framer Motion" />
         </motion.div>
 
         <motion.div variants={item}>
@@ -93,7 +109,19 @@ function Skills() {
         </motion.div>
 
         <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="Firebase" />
+        </motion.div>
+
+        <motion.div variants={item}>
           <SkillList src={checkMarkIcon} skill="Wix" />
+        </motion.div>
+
+        <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="Git" />
+        </motion.div>
+
+        <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="Github" />
         </motion.div>
       </motion.div>
     </motion.section>
