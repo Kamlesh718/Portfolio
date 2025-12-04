@@ -1,50 +1,81 @@
 .boot-animation {
   position: fixed;
   inset: 0;
-  background: var(--background-color); /* THEME BASED */
+  background: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99999;
   overflow: hidden;
-  opacity: 1;
 }
 
-/* subtle gradient overlay */
+/* Ambient gradient glow */
 .boot-animation::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.06),
-    rgba(0, 0, 0, 0.12)
-  );
-  pointer-events: none;
-  opacity: 0.4;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(0, 132, 255, 0.18), transparent 70%);
+  filter: blur(80px);
+  opacity: 0.7;
 }
 
-/* Content wrapper */
+/* Slight moving vignette */
+.boot-animation::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 40%,
+    rgba(0, 0, 0, 0.15)
+  );
+  animation: vignettePulse 6s infinite ease-in-out;
+}
+
+@keyframes vignettePulse {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
 .intro-wrapper {
   position: relative;
   text-align: center;
   z-index: 10;
 }
 
-/* title inherits theme text color */
+/* Premium title */
 .intro-title {
-  color: var(--text-color);
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
+  color: var(--text-color);
   letter-spacing: 1.5px;
-  margin: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
-/* subtitle inherits form-text-color */
+/* Elegant loading line */
+.loading-line {
+  height: 3px;
+  width: 200px;
+  background: var(--text-color);
+  margin: 0 auto 20px;
+  transform-origin: left;
+  border-radius: 2px;
+  opacity: 0.4;
+}
+
+/* Subtitle */
 .intro-sub {
-  margin-top: 1rem;
-  color: var(--form-text-color);
   font-size: 1rem;
-  letter-spacing: 2px;
-  opacity: 0.75;
+  color: var(--form-text-color);
+  opacity: 0.7;
+  letter-spacing: 1.5px;
 }

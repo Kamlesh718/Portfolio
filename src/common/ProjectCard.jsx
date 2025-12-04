@@ -25,7 +25,7 @@ function ProjectCard({ src, githubLink, liveSiteLink, title, project }) {
           rel="noopener noreferrer"
           className={styles.button}
         >
-          GitHub
+          Github
         </a>
 
         <a

@@ -36,6 +36,19 @@ function Hero() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
+  const titleReveal = {
+    hidden: { opacity: 0, y: 60, clipPath: "inset(0 0 100% 0)" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      clipPath: "inset(0 0 0% 0)",
+      transition: {
+        duration: 1,
+        ease: [0.16, 1, 0.3, 1],
+      },
+    },
+  };
+
   return (
     <section id="hero" className={styles.container}>
       <motion.div
@@ -47,10 +60,21 @@ function Hero() {
         <motion.img
           src={heroImg}
           className={styles.hero}
-          alt="Profile picture of Kamlesh Vishwakarma"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
+          initial={{ opacity: 0, scale: 0.4, y: 40 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: [0, -6, 0],
+          }}
+          transition={{
+            duration: 1.2,
+            ease: [0.16, 1, 0.3, 1],
+            y: {
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+          }}
         />
 
         <motion.img
@@ -71,13 +95,13 @@ function Hero() {
         initial="hidden"
         animate="visible"
       >
-        <motion.h1 variants={item}>
+        <motion.h1 variants={titleReveal}>
           Kamlesh
           <br />
           Vishwakarma
         </motion.h1>
 
-        <motion.h2 variants={item}>Frontend Developer</motion.h2>
+        <motion.h2 variants={titleReveal}>Frontend Developer</motion.h2>
 
         <motion.span variants={item}>
           <a href="https://github.com/Kamlesh718" target="_blank">
