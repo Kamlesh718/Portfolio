@@ -12,7 +12,7 @@ import spaceExplorer from "../../assets/space-explorer.ico";
 // import samvada from "../../assets/samvada.png";
 import devDesk from "../../assets/devdesk-logo.png";
 import restate from "../../assets/homelogo.jpg";
-import viewlytics from "../../assets/viewlytics.png";
+// import viewlytics from "../../assets/viewlytics.png";
 
 function Projects() {
   const { theme } = useTheme();
@@ -24,58 +24,67 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={virtueversesIcon}
-          link="https://github.com/Kamlesh718/Virtueverses"
+          githubLink="https://github.com/Kamlesh718/Virtueverses"
+          liveSiteLink="https://virtueverses.vercel.app/"
           title="VirtueVerses"
           project="Blog Web App"
         />
         <ProjectCard
           src={fastReactPizza}
-          link="https://github.com/Kamlesh718/Pizza_Restaurant"
+          githubLink="https://github.com/Kamlesh718/Pizza_Restaurant"
+          liveSiteLink="https://pizza-restaurant-teal.vercel.app/"
           title="Fast React Pizza"
           project="Pizza Booking Web App"
         />
 
         <ProjectCard
           src={theWildOasis}
-          link="https://github.com/Kamlesh718/the-wild-oasis-website"
+          githubLink="https://github.com/Kamlesh718/the-wild-oasis-website"
+          liveSiteLink="https://the-wild-oasis-website-three.vercel.app/"
           title="The Wild Oasis"
           project="Cabin Booking Web App"
         />
 
         <ProjectCard
           src={chitraMitra}
-          link="https://github.com/Kamlesh718/chitramitra-social-web-app"
+          githubLink="https://github.com/Kamlesh718/chitramitra-social-web-app"
+          liveSiteLink="https://chitramitra.vercel.app/"
           title="ChitraMitra"
           project="Social Media Web App"
         />
         <ProjectCard
           src={codeEditor}
-          link="https://github.com/Kamlesh718/react_code_editor"
+          githubLink="https://github.com/Kamlesh718/react_code_editor"
+          liveSiteLink="https://react-code-editor-rust.vercel.app/"
           title="Code Editor"
           project="Simple React Code Editor"
         />
         <ProjectCard
           src={solarSystem}
-          link="https://github.com/Kamlesh718/solar-system"
+          githubLink="https://github.com/Kamlesh718/solar-system"
+          liveSiteLink="https://solor-syystem.netlify.app/"
           title="Solar System"
           project="3D Solar System with THREEJS"
         />
         <ProjectCard
           src={spaceExplorer}
-          link="https://github.com/Kamlesh718/space-explorer"
+          githubLink="https://github.com/Kamlesh718/space-explorer"
+          liveSiteLink="https://space-explorer-lilac.vercel.app/"
           title="Space Explorer"
           project="A 3D space-themed web game"
         />
         <ProjectCard
           src={devDesk}
-          link="https://github.com/Kamlesh718/devdesk"
+          githubLink="https://github.com/Kamlesh718/devdesk"
+          liveSiteLink="https://devdesk-chi.vercel.app/"
           title="DevDesk"
           project="A mini OS in the browser"
         />
 
         <ProjectCard
           src={restate}
-          link="https://github.com/Kamlesh718/Re-estate"
+          githubLink="https://github.com/Kamlesh718/Re-estate"
+          liveSiteLink="https://github.com/Kamlesh718/Re-estate"
           title="ReState"
           project="Real Estate App"
         />
