@@ -1,21 +1,24 @@
+import { motion } from "framer-motion";
 import styles from "../sections/projects/ProjectsStyles.module.css";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 function ProjectCard({ src, githubLink, liveSiteLink, title, project }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
-      <>
-        <img className="hover" src={src} alt={`${title} logo`} />
-        <h3>{title}</h3>
-        <p>{project}</p>
-      </>
-      <div
-        style={{
-          marginTop: "12px",
-          display: "flex",
-          justifyContent: "center",
-          gap: "12px",
-        }}
-      >
+    <motion.div
+      className={styles.cardWrapper}
+      variants={cardVariants}
+      // whileHover={{ scale: 1.03 }}
+      transition={{ type: "spring", stiffness: 200, damping: 15 }}
+    >
+      <img className="hover" src={src} alt={`${title} logo`} />
+      <h3>{title}</h3>
+      <p>{project}</p>
+
+      <div className={styles.buttonRow}>
         <a
           href={githubLink}
           target="_blank"
@@ -34,7 +37,7 @@ function ProjectCard({ src, githubLink, liveSiteLink, title, project }) {
           Live Site
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
