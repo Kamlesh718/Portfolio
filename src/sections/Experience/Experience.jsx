@@ -40,6 +40,17 @@ function Experience() {
       <motion.h3 variants={item}>Nablasol - Remote</motion.h3>
 
       <motion.p variants={item}>Oct 2024 – Apr 2025</motion.p>
+      <motion.h1 className="sectionTitle" variants={item}>
+        Experience
+      </motion.h1>
+
+      <motion.h2 variants={item}>
+        Frontend Developer
+      </motion.h2>
+
+      <motion.h3 variants={item}>Kyzer Software - Mumbai, Maharashtra</motion.h3>
+
+      <motion.p variants={item}>Dec 2025 – Present</motion.p>
     </motion.section>
   );
 }
