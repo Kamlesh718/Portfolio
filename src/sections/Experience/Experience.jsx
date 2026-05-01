@@ -34,7 +34,7 @@ function Experience() {
       </motion.h1>
 
       <motion.h2 variants={item}>
-        Software Developer Intern (FrontEnd)
+        Software Developer
       </motion.h2>
 
       <motion.h3 variants={item}>Nablasol - Remote</motion.h3>
