@@ -115,7 +115,7 @@ function Hero() {
 
         <motion.div variants={item} className={styles.desc_box}>
           <p className={styles.description}>
-            With a passion for developing modern React web apps.
+            With a passion for developing modern web apps.
           </p>
         </motion.div>
 

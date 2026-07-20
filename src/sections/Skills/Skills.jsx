@@ -57,6 +57,14 @@ function Skills() {
         </motion.div>
 
         <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="Flutter" />
+        </motion.div>
+
+        <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="React Expo" />
+        </motion.div>
+
+        <motion.div variants={item}>
           <SkillList src={checkMarkIcon} skill="Typescript" />
         </motion.div>
 
@@ -82,6 +90,10 @@ function Skills() {
 
         <motion.div variants={item}>
           <SkillList src={checkMarkIcon} skill="React Flow" />
+        </motion.div>
+
+        <motion.div variants={item}>
+          <SkillList src={checkMarkIcon} skill="Angular" />
         </motion.div>
       </motion.div>
 
